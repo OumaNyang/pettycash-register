@@ -2,13 +2,13 @@
 This project consist of 5 modules namely:
 
 ```Header :```
-- Displays project title and navigation buttons menu
+- Displays project title and navigation buttons menu.
 
 ```Footer :```
-- Displays project footer information
+- Holds project footer information
 
 ```About :```
-- Consist project details.
+- Consist of  project details.
 
 ```AddBudget :```
 - The AddBudget Component allows you to add petty cash item to the data source. The record will then immediately be updated in the system and make it visible.
@@ -17,7 +17,7 @@ This project consist of 5 modules namely:
 
 - It otherwise takes the value that has been inputted and adds it to the others held at the data source. The addition takes place when the submit button is pressed.
 
-- It allows one to either set the reminder on or off for a particular item.
+- It allows one to either set the pais out  status or for a record.
 
 - The application will then reload automatically on the added list
 
@@ -26,7 +26,7 @@ This project consist of 5 modules namely:
 
 ```Budgets :```
 - Displays the items in the list of the petty cash register.
-
+it add 
 - Allows deletion of the items from the list, and from the data source.
 
 - It allows one to use a toggle function to set the paid out status yes or no.
@@ -34,7 +34,7 @@ This project consist of 5 modules namely:
 ```Button :```
 - The Button Component adds a reusable button component for multiple click actions. For example, this button can open the Add form and Close the form.
 
-Doube clicking on the petty cash record will updae its status as paid out or not paid out
+Doube clicking on the petty cash record will update its status as paid out or not paid out
 
 ### Screenshots###
 

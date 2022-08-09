@@ -60,9 +60,6 @@ const App = () => {
     }
 
 
-
-
-
     // Toggle PaidOut Status
     const toggleReminder = async (id) => {
         const budgetToToggle = await fetchBudget(id)
