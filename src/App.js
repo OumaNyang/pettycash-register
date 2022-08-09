@@ -19,7 +19,7 @@ const App = () => {
         getBudgets()
     }, [])
 
-    // Fetch Pety cash records 
+    // Fetch Petty cash records 
     const fetchBudgets = async () => {
         const res = await fetch('http://localhost:5000/budgets')
         const data = await res.json()
@@ -27,14 +27,14 @@ const App = () => {
         return data
     }
 
-    // Fetch Pety cash records 
+    // Fetch Petty cash records 
     const fetchBudget = async (id) => {
         const res = await fetch(`http://localhost:5000/budgets/${id}`)
         const data = await res.json()
         return data
     }
 
-    // Add Pety cash records 
+    // Add Petty cash records 
     const addBudget = async (budget) => {
         const res = await fetch('http://localhost:5000/budgets', {
             method: 'POST',
@@ -47,9 +47,17 @@ const App = () => {
         setBudgets([...budgets, data])
     }
 
-    // Delete Pety cash record
+    // Delete Petty cash record
  
-
+    const deleteBudget = async (id) => {
+        const res = await fetch(`http://localhost:5000/budgets/${id}`, {
+            method: 'DELETE',
+        })
+        //We should control the response status to decide if we will change the state or not.
+        res.status === 200
+            ? setBudgets(budgets.filter((budget) => budget.id !== id))
+            : alert('Error Deleting This petty cash record')
+    }
 
 
 
@@ -94,6 +102,8 @@ const App = () => {
                                 <Budgets
                                     budgets={budgets}
                                     onToggle={toggleReminder}
+                                    onDelete={deleteBudget}
+
                                 />
                             ) : (
                                 'No petty cash records found '

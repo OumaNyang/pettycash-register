@@ -4,29 +4,15 @@
       "name": "Staff Lunch",
       "amount": "800",
       "exptype": "Miscallenous",
-      "ispaidout": false,
+      "ispaidout": true,
       "id": 1
     },
     {
-      "name": "Office furnishing",
-      "amount": "54000",
-      "exptype": "Office Expenditure",
-      "ispaidout": false,
-      "id": 2
-    },
-    {
-      "name": "Wage payout",
-      "amount": "8000",
-      "exptype": "Miscallenous",
-      "ispaidout": false,
-      "id": 3
-    },
-    {
-      "name": "Employee Advance ",
-      "amount": "1800",
+      "name": "Electricity Bill",
+      "amount": "10000",
       "exptype": "Office Expenditure",
       "ispaidout": true,
-      "id": 4
+      "id": 2
     }
   ]
 }

@@ -35,10 +35,10 @@ const AddBudget = ({ onAdd }) => {
  
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label>Expenditure Name</label>
+        <label>Petty Cash Name</label>
         <input
           type='text'
-          placeholder='Add Budget'
+          placeholder='Petty cash name'
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -47,7 +47,7 @@ const AddBudget = ({ onAdd }) => {
         <label>Expenditure Type</label>
      
      <select name='extype' type="select"   onChange={(e) => setExptype(e.target.value)} >
-    <option  value="">------------------</option>
+    <option  value=""> </option>
     <option  value="Office Expenditure">Office Expenditure</option>
     <option  value="Miscallenous">Miscallenous</option>
     </select>
@@ -57,7 +57,7 @@ const AddBudget = ({ onAdd }) => {
         <label>Amount</label>
         <input
           type='text'
-          placeholder='Amount'
+          placeholder='Petty cash amount'
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
