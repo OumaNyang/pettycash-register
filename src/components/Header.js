@@ -10,6 +10,7 @@ const Header = ({ title, onAdd, showAdd, showAbout }) => {
   return (
     <header className='header'>
       <h1>{title}</h1>
+      <div className='navbuttons'>
       {location.pathname === '/' && (
         <Button
           color={showAdd ? 'red' : 'green'}
@@ -23,6 +24,7 @@ const Header = ({ title, onAdd, showAdd, showAbout }) => {
           </button>
       </Link>
     <Link className='aboutlink' to='/about'>About</Link>
+    </div>
       
     </header>
    
