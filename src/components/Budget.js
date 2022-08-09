@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
+import { default as NumberFormat } from 'react-number-format';
+
 
 const Budget = ({ budget, onDelete, onToggle }) => {
   return (
@@ -16,7 +18,14 @@ const Budget = ({ budget, onDelete, onToggle }) => {
         />
       </h3>
       <hr></hr>
-      <p>KES:{budget.amount}</p>
+<NumberFormat
+  value={budget.amount}
+  className="expenditureamount"
+  displayType={'text'}
+  thousandSeparator={true}
+  prefix={'KES '}
+  renderText={(value, props) => <div {...props}>{value}</div>}
+/>
     </div>
   )
 }

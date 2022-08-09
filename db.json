@@ -20,6 +20,13 @@
       "exptype": "Office Expenditure",
       "ispaidout": true,
       "id": 3
+    },
+    {
+      "name": "Sales Team transport",
+      "amount": "6800",
+      "exptype": "Office Expenditure",
+      "ispaidout": true,
+      "id": 4
     }
   ]
 }

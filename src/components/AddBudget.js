@@ -61,6 +61,7 @@ const AddBudget = ({ onAdd }) => {
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
+
       </div>
       <div className='form-control form-control-check'>
         <label>Paid Out</label>
