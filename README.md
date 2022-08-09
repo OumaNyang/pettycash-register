@@ -45,7 +45,6 @@ Doube clicking on the petty cash record will updae its status as paid out or not
 ![Add record page](images/add-record.png "Add record page")
 ![No Records Page](images/no-records-found.png "No Records Page")
 
-
 ![Final server product image](images/homepage.png "Full project image")
 
 #### Ouma Nyang - Moringa School Phase 2 Project 
