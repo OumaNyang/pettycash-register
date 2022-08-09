@@ -13,6 +13,13 @@
       "exptype": "Office Expenditure",
       "ispaidout": true,
       "id": 2
+    },
+    {
+      "name": "Airtime",
+      "amount": "3000",
+      "exptype": "Office Expenditure",
+      "ispaidout": true,
+      "id": 3
     }
   ]
 }

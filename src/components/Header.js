@@ -11,6 +11,11 @@ const Header = ({ title, onAdd, showAdd, showAbout }) => {
     <header className='header'>
       <h1>{title}</h1>
       <div className='navbuttons'>
+      <Link to='/'>
+          <button type="button" className={"btn btn-secondary"}>
+            Home
+          </button>
+      </Link>
       {location.pathname === '/' && (
         <Button
           color={showAdd ? 'red' : 'green'}
@@ -18,11 +23,7 @@ const Header = ({ title, onAdd, showAdd, showAbout }) => {
           onClick={onAdd}
         />
       )}
-       <Link to='/'>
-          <button type="button" className={"btn btn-secondary"}>
-            Home
-          </button>
-      </Link>
+      
     <Link className='aboutlink' to='/about'>About</Link>
     </div>
       

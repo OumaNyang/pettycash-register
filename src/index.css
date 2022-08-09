@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #0b5daa;
-  --success-color: #2fa10c;
+  --success-color: green;
 
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 65%;
+  width: 80% !important;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -39,6 +39,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
   color: var(--primary-color);
+  border-bottom:5px solid #0b5daa ;
 }
 .header .aboutlink{
   color: #fff;
@@ -153,20 +154,32 @@ footer  {
   text-align: center;
   text-decoration: none;
   font-weight: 800;
+  border-top: 2px solid #0b5daa;
 }
 .about{
-border: 5px solid red;
-padding: 5px;
+/* border: 2px solid #1d99e1; */
+padding: 2px;
 margin: 10px;
 display: flexbox;
+border-radius: 5px;
 
 }
 .about li{
-border: 3px solid rgb(34, 11, 209);
+/*border: 3px solid rgb(34, 11, 209);*/
 margin-left: 15px;
 padding:10px 20px;
 position: relative;
+font-weight: 600;
+color: #0b5daa;
 }
+.about li p{
+
+  margin-left: 15px;
+  color: #000000;
+  padding:10px 20px;
+  position: relative;
+  font-weight: 500;
+  }
 
   /* Desktops and laptops ----------- */
   @media only screen
