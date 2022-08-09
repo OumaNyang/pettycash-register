@@ -1,6 +1,7 @@
 ## Petty Cash Register
 This project consist of 5 modules namely:
-Header :
+
+```Header :```
 - Displays project title and navigation buttons menu
 
 ```Footer :```
@@ -47,4 +48,4 @@ Doube clicking on the petty cash record will updae its status as paid out or not
 
 ![Final server product image](images/homepage.png "Full project image")
 
-```&copy 2022 - Moringa School Phase 2 Project```
+#### Ouma Nyang - Moringa School Phase 2 Project 
