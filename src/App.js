@@ -55,10 +55,10 @@ const App = () => {
 
 
 
-    // Toggle Reminder
+    // Toggle PaidOut Status
     const toggleReminder = async (id) => {
         const budgetToToggle = await fetchBudget(id)
-        const updateBudget = {...budgetToToggle, reminder: !budgetToToggle.reminder}
+        const updateBudget = {...budgetToToggle, ispaidout: !budgetToToggle.ispaidout}
 
         const res = await fetch(`http://localhost:5000/budgets/${id}`, {
             method: 'PUT',
@@ -72,7 +72,7 @@ const App = () => {
 
         setBudgets(
             budgets.map((budget) =>
-                budget.id === id ? {...budget, reminder: data.reminder} : budget
+                budget.id === id ? {...budget, ispaidout: data.ispaidout} : budget
             )
         )
     }
@@ -96,7 +96,7 @@ const App = () => {
                                     onToggle={toggleReminder}
                                 />
                             ) : (
-                                'No Budgets To Show'
+                                'No petty cash records found '
                             )}
                         </>
                     )}

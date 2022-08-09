@@ -69,8 +69,11 @@ body {
   cursor: pointer;
 }
 
-.budget.reminder {
-  border-left: 5px  solid#2fa10c; 
+.budget.ispaidout {
+  border-left: 5px  solid#2fa10c;  
+  background: #d5f8cb;
+  color: #0e890c; 
+
 }
 
 .budget h3 {
@@ -80,7 +83,7 @@ body {
 }
 
 .budget p {
-  color: #a2a2a2;
+  color: #000000;
 }
 
 .add-form {

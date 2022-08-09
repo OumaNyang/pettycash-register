@@ -4,9 +4,10 @@ import { FaTimes } from 'react-icons/fa'
 const Budget = ({ budget, onDelete, onToggle }) => {
   return (
     <div
-      className={`budget ${budget.reminder && 'reminder'}`}
+      className={`budget ${budget.ispaidout && 'ispaidout'}`}
       onDoubleClick={() => onToggle(budget.id)}
     >
+      <small>{budget.exptype}</small>
       <h3>
         {budget.name}{' '}
         <FaTimes
@@ -14,7 +15,8 @@ const Budget = ({ budget, onDelete, onToggle }) => {
           onClick={() => onDelete(budget.id)}
         />
       </h3>
-      <p>{budget.amount}</p>
+      <hr></hr>
+      <p>KES:{budget.amount}</p>
     </div>
   )
 }
