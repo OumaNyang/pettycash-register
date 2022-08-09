@@ -1,0 +1,18 @@
+{
+  "budgets": [
+    {
+      "name": "Staff Lunch",
+      "amount": "800",
+      "exptype": "Miscallenous",
+      "ispaidout": false,
+      "id": 1
+    },
+    {
+      "name": "Office furnishing",
+      "amount": "54000",
+      "exptype": "Office Expenditure",
+      "ispaidout": true,
+      "id": 2
+    }
+  ]
+}

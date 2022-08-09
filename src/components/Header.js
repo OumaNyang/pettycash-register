@@ -16,12 +16,14 @@ const Header = ({ title, onAdd, showAdd }) => {
           onClick={onAdd}
         />
       )}
+      
     </header>
+   
   )
 }
 
 Header.defaultProps = {
-  title: 'Budget Tracker',
+  title: 'Petty Cash Register',
 }
 
 Header.propTypes = {

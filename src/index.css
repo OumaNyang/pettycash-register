@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 :root {
-  --primary-color: #4d91d1;
+  --primary-color: #0b5daa;
+  --success-color: #2fa10c;
+
 }
 
 * {
@@ -15,13 +17,14 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 60%;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
   border: 1px solid steelblue;
+  background: #c6dbee;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .header {
@@ -34,12 +37,12 @@ body {
 
 .btn {
   display: inline-block;
-  background: var(--primary-color);
+  background: var(--success-color);
   color: #fff;
   border: none;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
@@ -67,7 +70,7 @@ body {
 }
 
 .budget.reminder {
-  border-left: 5px solid green;
+  border-left: 5px  solid#2fa10c; 
 }
 
 .budget h3 {
@@ -92,14 +95,21 @@ body {
   display: block;
 }
 
-.form-control input {
+.form-control input,select {
   width: 100%;
   height: 40px;
   margin: 5px;
   padding: 3px 7px;
   font-size: 17px;
+  border: 1px solid rgb(8, 177, 255);
+  outline: none;
 }
 
+
+.form-control input:focus ,select:focus{
+  border: 1px solid rgb(9, 215, 88);
+  outline: none;
+}
 .form-control-check {
   display: flex;
   align-items: center;

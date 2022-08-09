@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div>
-      <h4>Version 1.0.0</h4>
+      <h4>About Project</h4>
+      <hr></hr>
       <Link to='/'>
           <button type="button" className={"btn btn-secondary"}>
-              Go Back
+             Main Page
           </button>
       </Link>
     </div>
