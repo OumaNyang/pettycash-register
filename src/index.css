@@ -22,8 +22,8 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
-  background: #c6dbee;
+  border: 1px solid rgb(216, 237, 255);
+  background: #ecf6f9;
   padding: 30px;
   border-radius: 0px;
   display: block;
@@ -164,6 +164,10 @@ margin: 10px;
 display: flexbox;
 border-radius: 5px;
 
+}
+.about a{
+  text-decoration: none;
+  color: #0b5daa;
 }
 .about li{
 /*border: 3px solid rgb(34, 11, 209);*/

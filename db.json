@@ -1,32 +1,3 @@
 {
-  "budgets": [
-    {
-      "name": "Staff Lunch",
-      "amount": "800",
-      "exptype": "Miscallenous",
-      "ispaidout": true,
-      "id": 1
-    },
-    {
-      "name": "Electricity Bill",
-      "amount": "10000",
-      "exptype": "Office Expenditure",
-      "ispaidout": true,
-      "id": 2
-    },
-    {
-      "name": "Airtime",
-      "amount": "3000",
-      "exptype": "Office Expenditure",
-      "ispaidout": true,
-      "id": 3
-    },
-    {
-      "name": "Sales Team transport",
-      "amount": "6800",
-      "exptype": "Office Expenditure",
-      "ispaidout": true,
-      "id": 4
-    }
-  ]
+  "budgets": []
 }

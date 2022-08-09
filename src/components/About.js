@@ -6,7 +6,7 @@ const About = () => {
       <h4>About Petty Cash Register </h4>
       <hr></hr><br></br>
       <div>
-        Github Repository Link :<a href='https://github.com/OumaNyang/pettycash-register'>https://github.com/OumaNyang/pettycash-register</a>
+        Github Repository Link :<a   href='https://github.com/OumaNyang/pettycash-register'>https://github.com/OumaNyang/pettycash-register</a>
         <p>What is Petty Cash register </p>
         This petty cash register can be used to record  petty cash expenditures in an office environment .
       </div>
