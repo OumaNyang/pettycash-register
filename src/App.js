@@ -7,6 +7,7 @@ import AddBudget from './components/AddBudget'
 import About from './components/About'
 
 const App = () => {
+
     const [showAddBudget, setShowAddBudget] = useState(false)
     const [budgets, setBudgets] = useState([])
 
@@ -15,11 +16,10 @@ const App = () => {
             const budgetsFromServer = await fetchBudgets()
             setBudgets(budgetsFromServer)
         }
-
         getBudgets()
     }, [])
 
-    // Fetch Budgets
+    // Fetch Pety cash records 
     const fetchBudgets = async () => {
         const res = await fetch('http://localhost:5000/budgets')
         const data = await res.json()
@@ -27,15 +27,14 @@ const App = () => {
         return data
     }
 
-    // Fetch Budgets
+    // Fetch Pety cash records 
     const fetchBudget = async (id) => {
         const res = await fetch(`http://localhost:5000/budgets/${id}`)
         const data = await res.json()
-
         return data
     }
 
-    // Add Budget
+    // Add Pety cash records 
     const addBudget = async (budget) => {
         const res = await fetch('http://localhost:5000/budgets', {
             method: 'POST',
@@ -44,26 +43,17 @@ const App = () => {
             },
             body: JSON.stringify(budget),
         })
-
         const data = await res.json()
-
         setBudgets([...budgets, data])
-
-        // const id = Math.floor(Math.random() * 10000) + 1
-        // const newBudget = { id, ...budget }
-        // setBudgets([...budgets, newBudget])
     }
 
-    // Delete Budget
-    const deleteBudget = async (id) => {
-        const res = await fetch(`http://localhost:5000/budgets/${id}`, {
-            method: 'DELETE',
-        })
-        //We should control the response status to decide if we will change the state or not.
-        res.status === 200
-            ? setBudgets(budgets.filter((budget) => budget.id !== id))
-            : alert('Error Deleting This Budget')
-    }
+    // Delete Pety cash record
+ 
+
+
+
+
+
 
     // Toggle Reminder
     const toggleReminder = async (id) => {
@@ -103,7 +93,6 @@ const App = () => {
                             {budgets.length > 0 ? (
                                 <Budgets
                                     budgets={budgets}
-                                    onDelete={deleteBudget}
                                     onToggle={toggleReminder}
                                 />
                             ) : (
