@@ -4,21 +4,21 @@
       "name": "Staff Lunch",
       "amount": "800",
       "exptype": "Miscallenous",
-      "ispaidout": true,
+      "ispaidout": false,
       "id": 1
     },
     {
       "name": "Office furnishing",
       "amount": "54000",
       "exptype": "Office Expenditure",
-      "ispaidout": true,
+      "ispaidout": false,
       "id": 2
     },
     {
       "name": "Wage payout",
       "amount": "8000",
       "exptype": "Miscallenous",
-      "ispaidout": true,
+      "ispaidout": false,
       "id": 3
     },
     {
